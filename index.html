@@ -1,0 +1,2609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="src/css/style.css" />
+  <link rel="stylesheet" href="src/css/tt.tailwind.css" />
+  <!-- FONT AWESOME CDN LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- FONT AWESOME CDN LINK -->
+</head>
+
+<body>
+  <!--note: Header-Begin -->
+  <header>
+    <div class="header-top flex justify-between items-center">
+      <div class="call-section flex gap-5">
+        <div class="phone-side">
+          <i class="fa-solid fa-phone text-white text-sm"></i>
+          <span class="text-white open-sans text-xs pl-1">+88012 3456 7894</span>
+        </div>
+        <div class="mail-side">
+          <i class="fa-regular fa-envelope text-white text-sm"></i>
+          <span class="text-white open-sans text-xs pl-1">support@ui-lib.com</span>
+        </div>
+      </div>
+      <div class="language-section flex gap-5 items-center">
+        <div class="privacy-side flex gap-5">
+          <a href="#" class="text-xs text-white open-sans">Theme FAQ's</a>
+          <a href="#" class="text-xs text-white open-sans">Need Help?</a>
+        </div>
+        <div class="select-side flex gap-5 items-center">
+          <div class="lang-us flex items-center gap-2 relative" id="first-lang">
+            <img width="23.33px" height="14px" src="src/assets/img/bd.png" alt="usa.png"
+              class="rounded cursor-pointer" />
+            <span class="text-white uppercase open-sans text-xs font-600 cursor-pointer">en</span>
+            <i class="fa-solid fa-angle-down text-white cursor-pointer"></i>
+            <ul class="first-lang-drop-menu absolute flex-col gap-1" id="first-lang-drop-menu">
+              <li class="flex items-center gap-2">
+                <img width="30px" height="18px" src="src/assets/img/bd.png" alt="usa.png"
+                  class="rounded cursor-pointer" />
+                <span class="uppercase open-sans text-xs font-600 cursor-pointer">en</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <img width="30px" height="18px" src="src/assets/img/bd.png" alt="usa.png"
+                  class="rounded cursor-pointer" />
+                <span class="uppercase open-sans text-xs font-600 cursor-pointer">cn</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <img width="30px" height="18px" src="src/assets/img/bd.png" alt="usa.png"
+                  class="rounded cursor-pointer" />
+                <span class="uppercase open-sans text-xs font-600 cursor-pointer">ln</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="lang-en flex items-center gap-1 relative" id="lang-en">
+            <img width="23.33px" height="14px" src="src/assets/img/bd.png" alt="usa.png"
+              class="rounded cursor-pointer" />
+            <span class="text-white uppercase open-sans text-xs font-600 cursor-pointer">usd</span>
+            <i class="fa-solid fa-angle-down text-white cursor-pointer"></i>
+            <ul class="lang-en-drop-menu flex-col" id="lang-en-drop-menu">
+              <li class="flex items-center gap-2 py-2 px-4">
+                <img width="30px" height="18px" src="src/assets/img/bd.png" alt="usa.png"
+                  class="rounded cursor-pointer" />
+                <span class="uppercase open-sans text-xs font-600 cursor-pointer">en</span>
+              </li>
+              <li class="flex items-center gap-2 py-2 px-4">
+                <img width="30px" height="18px" src="src/assets/img/bd.png" alt="usa.png"
+                  class="rounded cursor-pointer" />
+                <span class="uppercase open-sans text-xs font-600 cursor-pointer">tn</span>
+              </li>
+              <li class="flex items-center gap-2 py-2 px-4">
+                <img width="30px" height="18px" src="src/assets/img/bd.png" alt="usa.png"
+                  class="rounded cursor-pointer" />
+                <span class="uppercase open-sans text-xs font-600 cursor-pointer">hn</span>
+              </li>
+              <li class="flex items-center gap-2 py-2 px-4">
+                <img width="30px" height="18px" src="src/assets/img/bd.png" alt="usa.png"
+                  class="rounded cursor-pointer" />
+                <span class="uppercase open-sans text-xs font-600 cursor-pointer">bn</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-header">
+      <div class="main-header-top flex items-center">
+        <div class="main-header-logo-side">
+          <img src="src/assets/img/logo.svg" class="cursor-pointer" />
+        </div>
+        <div class="main-search-side">
+          <div class="search-field relative">
+            <input type="text" placeholder="Search and hit enter..." />
+            <div class="icon">
+              <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
+            </div>
+            <div class="submit-btn flex items-center justify-center gap-4 cursor-pointer">
+              <span class="text-gray-500">All Categories</span>
+              <i class="fa-solid fa-angle-down text-gray-500"></i>
+            </div>
+          </div>
+        </div>
+        <div class="main-icon-side flex gap-5">
+          <div class="user-icon-side flex items-center justify-center">
+            <i class="fa-regular fa-user text-gray-600"></i>
+          </div>
+          <div class="shop-icon-side flex justify-center items-center">
+            <i class="fa-solid fa-bag-shopping text-gray-600"></i>
+          </div>
+        </div>
+      </div>
+      <div class="main-header-bottom flex justify-between items-center">
+        <div class="category-side">
+          <div class="category-btn-area flex justify-between items-center cursor-pointer">
+            <div class="left-side flex gap-2 items-center">
+              <i class="fa-solid fa-border-all text-slate-800 text-xl"></i>
+              <span class="open-sans text-sm text-gray-500 font-600">Categories</span>
+            </div>
+            <div class="right-side">
+              <i class="fa-solid fa-angle-down text-gray-500"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-side">
+          <nav>
+            
+            <ul class="full-navbar">
+              <li class="full-navbar-links home-parent-li relative">
+                <a href="#" class="parent-a">Home</a>
+
+                <ul class="home-drop-menu-ul">
+                  <li class="home-drop-menu-li">
+                    <a href="#" class="open-sans text-sm font-700 home-drop-menu-a">Market 1</a>
+                  </li>
+                  <li class="home-drop-menu-li">
+                    <a href="#" class="open-sans text-sm font-700 home-drop-menu-a">Market 1</a>
+                  </li>
+                  <li class="home-drop-menu-li">
+                    <a href="#" class="open-sans text-sm font-700 home-drop-menu-a">Market 1</a>
+                  </li>
+                  <li class="home-drop-menu-li">
+                    <a href="#" class="open-sans text-sm font-700 home-drop-menu-a">Market 1</a>
+                  </li>
+                  <li class="home-drop-menu-li">
+                    <a href="#" class="open-sans text-sm font-700 home-drop-menu-a">Market 1</a>
+                  </li>
+                  <li class="home-drop-menu-li">
+                    <a href="#" class="open-sans text-sm font-700 home-drop-menu-a">Market 1</a>
+                  </li>
+                  <li class="home-drop-menu-li">
+                    <a href="#" class="open-sans text-sm font-700 home-drop-menu-a">Market 1</a>
+                  </li>
+                  <li class="home-drop-menu-li">
+                    <a href="#" class="open-sans text-sm font-700 home-drop-menu-a">Market 1</a>
+                  </li>
+                  <li class="home-drop-menu-li">
+                    <a href="#" class="open-sans text-sm font-700 home-drop-menu-a">Market 1</a>
+                  </li>
+                  <li class="home-drop-menu-li">
+                    <a href="#" class="open-sans text-sm font-700 home-drop-menu-a">Market 1</a>
+                  </li>
+                  <li class="home-drop-menu-li">
+                    <a href="#" class="open-sans text-sm font-700 home-drop-menu-a">Market 1</a>
+                  </li>
+                  <li class="home-drop-menu-li">
+                    <a href="#" class="open-sans text-sm font-700 home-drop-menu-a">Market 1</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="full-navbar-links pages-parent-li relative">
+                <a href="#" class="parent-a">Pages</a>
+                <div class="pages-drop-menu-container relative">
+                  <ul>
+                    <li class="first-li">
+                      <a href="#" class="open-sans text-sm text-slate-800 font-700">Sale Pages</a>
+                      <i class="fa-solid fa-angle-right "></i>
+                      <div class="pages-first-submenu">
+                        <ul>
+                          <li><a href="#" class="open-sans text-sm text-slate-800 font-700">Version 1</a></li>
+                          <li><a href="#" class="open-sans text-sm text-slate-800 font-700">Version 2</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="vendor-li">
+                      <a href="#" class="open-sans text-sm text-slate-800 font-700">Vendor</a>
+                      <i class="fa-solid fa-angle-right "></i>
+                      <div class="vendor-submenu">
+                        <ul>
+                          <li><a href="#" class="open-sans text-sm text-slate-800 font-700">Version 1</a></li>
+                          <li><a href="#" class="open-sans text-sm text-slate-800 font-700">Version 2</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="shop-li">
+                      <a href="#" class="open-sans text-sm text-slate-800 font-700">Shop</a>
+                      <i class="fa-solid fa-angle-right "></i>
+                      <div class="shop-submenu">
+                        <ul>
+                          <li><a href="product.html" class="open-sans text-sm text-slate-800 font-700">Search
+                              Product</a></li>
+                          <li><a href="single-product.html" class="open-sans text-sm text-slate-800 font-700">Single
+                              Product</a></li>
+                          <li><a href="#" class="open-sans text-sm text-slate-800 font-700">Version 1</a></li>
+                          <li><a href="#" class="open-sans text-sm text-slate-800 font-700">Version 2</a></li>
+                        </ul>
+                      </div>
+
+                    </li>
+                    <li class="auth-li">
+                      <a href="#" class="open-sans text-sm text-slate-800 font-700">Auth</a>
+                      <i class="fa-solid fa-angle-right "></i>
+                      <div class="auth-submenu">
+                        <ul>
+
+                          <li><a href="#" class="open-sans text-sm text-slate-800 font-700">Version 1</a></li>
+                          <li><a href="#" class="open-sans text-sm text-slate-800 font-700">Version 2</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+              </li>
+              <li class="full-navbar-links">
+                <a href="#" class="parent-a">User Account</a>
+              </li>
+              <li class="full-navbar-links">
+                <a href="#" class="parent-a">Vendor Account</a>
+              </li>
+              <li class="full-navbar-links">
+                <a href="#" class="parent-a">Track My Orders</a>
+              </li>
+              <li class="full-navbar-links">
+                <a href="#" class="parent-a">Back To Demos</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--note: Header-End -->
+
+  <main class="bg-slate-50">
+    <section class="slider-section flex relative">
+      <div class="category-side">
+        <ul>
+          <li class="flex justify-between items-center">
+            <div class="content">
+              <i class="fa-solid fa-shirt"></i>
+              <a href="#" class="open-sans text-sm text-slate-800 font-700">
+                Fashion
+              </a>
+            </div>
+            <div class="arrow-side">
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </li>
+          <li class="flex justify-between items-center">
+            <div class="content">
+              <i class="fa-solid fa-shirt"></i>
+              <a href="#" class="open-sans text-sm text-slate-800 font-700">
+                Fashion
+              </a>
+            </div>
+            <div class="arrow-side">
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </li>
+          <li class="flex justify-between items-center">
+            <div class="content">
+              <i class="fa-solid fa-shirt"></i>
+              <a href="#" class="open-sans text-sm text-slate-800 font-700">
+                Fashion
+              </a>
+            </div>
+            <div class="arrow-side">
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </li>
+          <li class="flex justify-between items-center">
+            <div class="content">
+              <i class="fa-solid fa-shirt"></i>
+              <a href="#" class="open-sans text-sm text-slate-800 font-700">
+                Fashion
+              </a>
+            </div>
+            <div class="arrow-side">
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </li>
+          <li class="flex justify-between items-center">
+            <div class="content">
+              <i class="fa-solid fa-shirt"></i>
+              <a href="#" class="open-sans text-sm text-slate-800 font-700">
+                Fashion
+              </a>
+            </div>
+            <div class="arrow-side">
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-shirt"></i>
+            <a href="#" class="open-sans text-sm text-slate-800 font-700">
+              Fashion
+            </a>
+          </li>
+          <li>
+            <i class="fa-solid fa-shirt"></i>
+            <a href="#" class="open-sans text-sm text-slate-800 font-700">
+              Fashion
+            </a>
+          </li>
+          <li>
+            <i class="fa-solid fa-shirt"></i>
+            <a href="#" class="open-sans text-sm text-slate-800 font-700">
+              Fashion
+            </a>
+          </li>
+          <li>
+            <i class="fa-solid fa-shirt"></i>
+            <a href="#" class="open-sans text-sm text-slate-800 font-700">
+              Fashion
+            </a>
+          </li>
+          <li>
+            <i class="fa-solid fa-shirt"></i>
+            <a href="#" class="open-sans text-sm text-slate-800 font-700">
+              Fashion
+            </a>
+          </li>
+          <li>
+            <i class="fa-solid fa-shirt"></i>
+            <a href="#" class="open-sans text-sm text-slate-800 font-700">
+              Fashion
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="slider-side py-4 w-full px-8 flex">
+        <div class="info-side">
+          <h2 class="text-slate-800 open-sans font-900">
+            50% Off For Your First Shopping
+          </h2>
+          <p class="open-sans text-sm text-slate-800 font-700">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
+            lobortis consequat eu, quam etiam at quis ut convalliss.
+          </p>
+          <button>
+            <a href="#" class="open-sans text-sm text-white">Shop Now</a>
+          </button>
+        </div>
+        <div class="img-side"></div>
+      </div>
+      <div class="dots-container flex justify-center gap-1 w-full">
+        <span></span>
+        <span></span>
+      </div>
+    </section>
+    <!-- slider-end -->
+
+    <section class="flash-deal-section flex-col relative">
+      <div class="deals-title flex justify-between mt-8">
+        <div class="heading flex gap-2-5 items-center">
+          <i class="fa-solid fa-bolt-lightning text-red-500"></i>
+          <h2 class="open-sans font-700">Flash Deals</h2>
+        </div>
+        <div class="view-all">
+          <span class="open-sans text-sm text-slate-800 font-700 pr-1">View All</span>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+
+      <div class="deals-card-side flex gap-5">
+        <div class="card-item flex-col">
+          <div class="card-top ">
+            <div class="sub-top flex justify-between p-4">
+              <div class="first">
+                <span class=" text-white open-sans">
+                  25% off
+                </span>
+              </div>
+              <div class="second flex-col gap-2-5">
+                <i class="fa-solid fa-eye text-cyan-950"></i>
+                <i class="fa-solid fa-heart text-gray-900"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-info ">
+            <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+            <div class="star-container py-2">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            </div>
+            <div class="rating flex justify-between items-center">
+              <div class="cost">
+                <span class="text-red-500 open-sans text-sm">$187.50</span>
+                <s class="open-sans text-sm text-gray-500">$250.00</s>
+              </div>
+              <div class="card">
+                <span>
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-item flex-col">
+          <div class="card-top ">
+            <div class="sub-top flex justify-between p-4">
+              <div class="first">
+                <span class=" text-white open-sans">
+                  25% off
+                </span>
+              </div>
+              <div class="second flex-col gap-2-5">
+                <i class="fa-solid fa-eye text-cyan-950"></i>
+                <i class="fa-solid fa-heart text-gray-900"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-info ">
+            <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+            <div class="star-container py-2">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            </div>
+            <div class="rating flex justify-between items-center">
+              <div class="cost">
+                <span class="text-red-500 open-sans text-sm">$187.50</span>
+                <s class="open-sans text-sm text-gray-500">$250.00</s>
+              </div>
+              <div class="card">
+                <span>
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-item flex-col">
+          <div class="card-top ">
+            <div class="sub-top flex justify-between p-4">
+              <div class="first">
+                <span class=" text-white open-sans">
+                  25% off
+                </span>
+              </div>
+              <div class="second flex-col gap-2-5">
+                <i class="fa-solid fa-eye text-cyan-950"></i>
+                <i class="fa-solid fa-heart text-gray-900"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-info ">
+            <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+            <div class="star-container py-2">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            </div>
+            <div class="rating flex justify-between items-center">
+              <div class="cost">
+                <span class="text-red-500 open-sans text-sm">$187.50</span>
+                <s class="open-sans text-sm text-gray-500">$250.00</s>
+              </div>
+              <div class="card">
+                <span>
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-item flex-col">
+          <div class="card-top ">
+            <div class="sub-top flex justify-between p-4">
+              <div class="first">
+                <span class=" text-white open-sans">
+                  25% off
+                </span>
+              </div>
+              <div class="second flex-col gap-2-5">
+                <i class="fa-solid fa-eye text-cyan-950"></i>
+                <i class="fa-solid fa-heart text-gray-900"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-info ">
+            <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+            <div class="star-container py-2">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            </div>
+            <div class="rating flex justify-between items-center">
+              <div class="cost">
+                <span class="text-red-500 open-sans text-sm">$187.50</span>
+                <s class="open-sans text-sm text-gray-500">$250.00</s>
+              </div>
+              <div class="card">
+                <span>
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrows flex  justify-between absolute top-50-percentage">
+        <span class="left">
+          <i class="fa-solid fa-angle-left"></i>
+        </span>
+        <span>
+          <i class="fa-solid fa-angle-right"></i>
+        </span>
+      </div>
+    </section>
+
+    <section class="top-category-section  ">
+      <div class="deals-title flex justify-between my-8">
+        <div class="heading flex gap-2-5 items-center">
+          <i class="fa-solid fa-bolt-lightning text-red-500"></i>
+          <h2 class="open-sans font-700">Flash Deals</h2>
+        </div>
+        <div class="view-all">
+          <span class="open-sans text-sm text-slate-800 font-700 pr-1">View All</span>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+      <div class="category-cards-section flex gap-5 relative">
+        <div class="cart">
+          <img src="src/assets/img/category-2 (1).webp">
+          <div class="tooltip flex justify-between ">
+            <div class="left">
+              <span class="open-sans ">Headphones</span>
+            </div>
+            <div class="right">
+              <span class="open-sans ">Headphones</span>
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+          <img src="src/assets/img/category-2 (1).webp">
+          <div class="tooltip flex justify-between ">
+            <div class="left">
+              <span class="open-sans ">Headphones</span>
+            </div>
+            <div class="right">
+              <span class="open-sans ">Headphones</span>
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+          <img src="src/assets/img/category-2 (1).webp">
+          <div class="tooltip flex justify-between ">
+            <div class="left">
+              <span class="open-sans ">Headphones</span>
+            </div>
+            <div class="right">
+              <span class="open-sans ">Headphones</span>
+            </div>
+          </div>
+        </div>
+        <div class="arrows-container flex  justify-between w-full absolute left-0  top-0 ">
+          <span class="left">
+            <i class="fa-solid fa-angle-left"></i>
+          </span>
+          <span class="right-arr">
+            <i class="fa-solid fa-angle-right"></i>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="rating-section  ">
+      <div class="rating-section-content flex ">
+        <div class="rating-left">
+          <div class="deals-title flex justify-between my-8">
+            <div class="heading flex gap-2-5 items-center">
+              <i class="fa-solid fa-bolt-lightning text-red-500"></i>
+              <h2 class="open-sans font-700">Top Ratings</h2>
+            </div>
+            <div class="view-all">
+              <span class="open-sans text-sm text-slate-800 font-700 pr-1">View All</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="rating-card ">
+            <div class="card-item flex-col ">
+              <div class="img">
+                <img src="src/assets/img/camera-1.webp" alt="">
+              </div>
+              <div class="rating-info">
+                <div class="star-container py-2 flex gap-1">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <code>(12)</code>
+                </div>
+                <p class="open-sans text-sm  pl-6">Camera</p>
+                <p class="open-sans text-sm  pl-6 text-red-500">$3,300.00</p>
+              </div>
+            </div>
+            <div class="card-item flex-col">
+              <div class="img">
+                <img src="src/assets/img/camera-1.webp" alt="">
+              </div>
+              <div class="rating-info">
+                <div class="star-container py-2 flex gap-1">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <code>(12)</code>
+                </div>
+                <p class="open-sans text-sm  pl-6">Camera</p>
+                <p class="open-sans text-sm  pl-6 text-red-500">$3,300.00</p>
+              </div>
+            </div>
+            <div class="card-item flex-col">
+              <div class="img">
+                <img src="src/assets/img/camera-1.webp" alt="">
+              </div>
+              <div class="rating-info">
+                <div class="star-container py-2 flex gap-1">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <code>(12)</code>
+                </div>
+                <p class="open-sans text-sm  pl-6">Camera</p>
+                <p class="open-sans text-sm  pl-6 text-red-500">$3,300.00</p>
+              </div>
+            </div>
+            <div class="card-item flex-col">
+              <div class="img">
+                <img src="src/assets/img/camera-1.webp" alt="">
+              </div>
+              <div class="rating-info">
+                <div class="star-container py-2 flex gap-1">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <code>(12)</code>
+                </div>
+                <p class="open-sans text-sm  pl-6">Camera</p>
+                <p class="open-sans text-sm  pl-6 text-red-500">$3,300.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rating-card-2 flex-col">
+          <div class="deals-title flex justify-between my-8 ">
+            <div class="heading flex gap-2-5 items-center">
+              <i class="fa-solid fa-bolt-lightning text-red-500"></i>
+              <h2 class="open-sans font-700">Featured Brands</h2>
+            </div>
+            <div class="view-all">
+              <span class="open-sans text-sm text-slate-800 font-700 pr-1">View All</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="rating-card-right  flex gap-4">
+            <div class="card-item ">
+              <img src="src/assets/img/london-britches.webp" alt="">
+              <p class="open-sans text-sm text-slate-800 mt-2">London</p>
+            </div>
+            <div class="rating-card  ">
+              <img src="src/assets/img/london-britches.webp" alt="">
+              <p class="open-sans text-sm text-slate-800 mt-2">London</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="new-arrivals-section">
+      <div class="deals-title flex justify-between my-8">
+        <div class="heading flex gap-2-5 items-center">
+          <i class="fa-solid fa-bolt-lightning text-red-500"></i>
+          <h2 class="open-sans font-700">New Arrivals</h2>
+        </div>
+        <div class="view-all">
+          <span class="open-sans text-sm text-slate-800 font-700 pr-1">View All</span>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+      <div class="arrival-cards flex gap-1">
+        <div class="card">
+          <img src="src/assets/img/imagegoggles.webp" alt="">
+          <p class="open-sans text-sm my-2">Sunglass</p>
+          <p class="open-sans text-sm text-red-500">$150.00</p>
+        </div>
+
+        <div class="card">
+          <img src="src/assets/img/imagegoggles.webp" alt="">
+          <p class="open-sans text-sm my-2">Sunglass</p>
+          <p class="open-sans text-sm text-red-500">$150.00</p>
+
+        </div>
+        <div class="card">
+          <img src="src/assets/img/imagegoggles.webp" alt="">
+          <p class="open-sans text-sm my-2">Sunglass</p>
+          <p class="open-sans text-sm text-red-500">$150.00</p>
+
+        </div>
+        <div class="card">
+          <img src="src/assets/img/imagegoggles.webp" alt="">
+          <p class="open-sans text-sm my-2">Sunglass</p>
+          <p class="open-sans text-sm text-red-500">$150.00</p>
+
+        </div>
+        <div class="card">
+          <img src="src/assets/img/imagegoggles.webp" alt="">
+          <p class="open-sans text-sm my-2">Sunglass</p>
+          <p class="open-sans text-sm text-red-500">$150.00</p>
+
+        </div>
+        <div class="card">
+          <img src="src/assets/img/imagegoggles.webp" alt="">
+          <p class="open-sans text-sm my-2">Sunglass</p>
+          <p class="open-sans text-sm text-red-500">$150.00</p>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="new-arrivals-section-2">
+      <div class="deals-title flex justify-between my-8">
+        <div class="heading flex gap-2-5 items-center">
+          <i class="fa-solid fa-bolt-lightning text-red-500"></i>
+          <h2 class="open-sans font-700">Big Discounts</h2>
+        </div>
+        <div class="view-all">
+          <span class="open-sans text-sm text-slate-800 font-700 pr-1">View All</span>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+      <div class="arrival-cards flex gap-5 relative">
+        <div class="card">
+          <img src="src/assets/img/ps.webp" alt="">
+          <p class="open-sans text-sm my-2">Sunglass</p>
+          <p class="open-sans text-sm text-red-500">$150.00 <span>$177.00</span></p>
+        </div>
+        <div class="card">
+          <img src="src/assets/img/ps.webp" alt="">
+          <p class="open-sans text-sm my-2">Sunglass</p>
+          <p class="open-sans text-sm text-red-500">$150.00 <span>$177.00</span></p>
+
+        </div>
+        <div class="card">
+          <img src="src/assets/img/ps.webp" alt="">
+          <p class="open-sans text-sm my-2">Sunglass</p>
+          <p class="open-sans text-sm text-red-500">$150.00 <span>$177.00</span></p>
+
+        </div>
+        <div class="card">
+          <img src="src/assets/img/ps.webp" alt="">
+          <p class="open-sans text-sm my-2">Sunglass</p>
+          <p class="open-sans text-sm text-red-500">$150.00 <span>$177.00</span></p>
+
+        </div>
+        <div class="card">
+          <img src="src/assets/img/ps.webp" alt="">
+          <p class="open-sans text-sm my-2">Sunglass</p>
+          <p class="open-sans text-sm text-red-500">$150.00 <span>$177.00</span></p>
+
+        </div>
+        <div class="card">
+          <img src="src/assets/img/ps.webp" alt="">
+          <p class="open-sans text-sm my-2">Sunglass</p>
+          <p class="open-sans text-sm text-red-500">$150.00 <span>$177.00</span></p>
+        </div>
+        <div class="arrows flex justify-between">
+          <div class="left">
+            <span>
+              <i class="fa-solid fa-angle-left text-white"></i>
+            </span>
+          </div>
+          <div class="right">
+            <span>
+              <i class="fa-solid fa-angle-right text-white"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cars-section">
+      <div class="car-types-area" style="height: 865px;">
+        <div class="car-types-side">
+          <ul>
+            <li>
+              <div class="info flex items-center ">
+                <img src="src/assets/img/ferrari.webp" alt="">
+                Ferrari
+              </div>
+            </li>
+
+            <li>
+              <div class="info flex items-center ">
+                <img src="src/assets/img/ferrari.webp" alt="">
+                Ferrari
+              </div>
+            </li>
+            <li>
+              <div class="info flex items-center ">
+                <img src="src/assets/img/ferrari.webp" alt="">
+                Ferrari
+              </div>
+            </li>
+            <li>
+              <div class="info flex items-center ">
+                <img src="src/assets/img/ferrari.webp" alt="">
+                Ferrari
+              </div>
+            </li>
+            <li>
+              <div class="info flex items-center ">
+                <img src="src/assets/img/ferrari.webp" alt="">
+                Ferrari
+              </div>
+            </li>
+            <li>
+              <div class="info flex items-center ">
+                <img src="src/assets/img/ferrari.webp" alt="">
+                Ferrari
+              </div>
+            </li>
+          </ul>
+          <p>View All brands</p>
+        </div>
+      </div>
+      <div class="car-cards w-full">
+        <div class="deals-title flex w-full justify-between ">
+          <div class="heading flex gap-2-5 items-center">
+            <i class="fa-solid fa-bolt-lightning text-red-500"></i>
+            <h2 class="open-sans font-700">Cars</h2>
+          </div>
+          <div class="view-all">
+            <span class="open-sans text-sm text-slate-800 font-700 pr-1">View All</span>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cars-section">
+      <div class="car-types-area" style="height: 865px;">
+        <div class="car-types-side">
+          <h3 class="open-sans text-xl text-center">Brands <span class="text-gray-500">|</span> <span
+              class="open-sans text-gray-500">Shops</span></h3>
+          <ul>
+            <li>
+              <div class="info flex items-center ">
+                <img src="src/assets/img/ferrari.webp" alt="">
+                Ferrari
+              </div>
+            </li>
+
+            <li>
+              <div class="info flex items-center ">
+                <img src="src/assets/img/ferrari.webp" alt="">
+                Ferrari
+              </div>
+            </li>
+            <li>
+              <div class="info flex items-center ">
+                <img src="src/assets/img/ferrari.webp" alt="">
+                Ferrari
+              </div>
+            </li>
+            <li>
+              <div class="info flex items-center ">
+                <img src="src/assets/img/ferrari.webp" alt="">
+                Ferrari
+              </div>
+            </li>
+            <li>
+              <div class="info flex items-center ">
+                <img src="src/assets/img/ferrari.webp" alt="">
+                Ferrari
+              </div>
+            </li>
+            <li>
+              <div class="info flex items-center ">
+                <img src="src/assets/img/ferrari.webp" alt="">
+                Ferrari
+              </div>
+            </li>
+          </ul>
+          <p>View All brands</p>
+        </div>
+      </div>
+      <div class="car-cards w-full">
+        <div class="deals-title flex w-full justify-between ">
+          <div class="heading flex gap-2-5 items-center">
+            <i class="fa-solid fa-bolt-lightning text-red-500"></i>
+            <h2 class="open-sans font-700">Mobile Phones</h2>
+          </div>
+          <div class="view-all">
+            <span class="open-sans text-sm text-slate-800 font-700 pr-1">View All</span>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner flex gap-5">
+      <div class="left-side">
+        <img src="src/assets/img/banner-1.webp" alt="">
+      </div>
+      <div class="right-side">
+        <img src="src/assets/img/banner-2.webp" alt="">
+      </div>
+    </section>
+
+    <section class="cars-section">
+      <div class="car-types-area" style="height: 865px;">
+        <div class="car-types-side">
+          <h3 class="open-sans text-xl text-center">Brands <span class="text-gray-500">|</span> <span
+              class="open-sans text-gray-500">Shops</span></h3>
+          <ul>
+            <li>
+              <div class="info flex items-center ">
+                <img src="src/assets/img/ferrari.webp" alt="">
+                Ferrari
+              </div>
+            </li>
+
+            <li>
+              <div class="info flex items-center ">
+                <img src="src/assets/img/ferrari.webp" alt="">
+                Ferrari
+              </div>
+            </li>
+            <li>
+              <div class="info flex items-center ">
+                <img src="src/assets/img/ferrari.webp" alt="">
+                Ferrari
+              </div>
+            </li>
+            <li>
+              <div class="info flex items-center ">
+                <img src="src/assets/img/ferrari.webp" alt="">
+                Ferrari
+              </div>
+            </li>
+            <li>
+              <div class="info flex items-center ">
+                <img src="src/assets/img/ferrari.webp" alt="">
+                Ferrari
+              </div>
+            </li>
+            <li>
+              <div class="info flex items-center ">
+                <img src="src/assets/img/ferrari.webp" alt="">
+                Ferrari
+              </div>
+            </li>
+          </ul>
+          <p>View All brands</p>
+        </div>
+      </div>
+      <div class="car-cards w-full">
+        <div class="deals-title flex w-full justify-between ">
+          <div class="heading flex gap-2-5 items-center">
+            <i class="fa-solid fa-bolt-lightning text-red-500"></i>
+            <h2 class="open-sans font-700">Optics / Watch</h2>
+          </div>
+          <div class="view-all">
+            <span class="open-sans text-sm text-slate-800 font-700 pr-1">View All</span>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-item flex-col">
+            <div class="card-top ">
+              <div class="sub-top flex justify-between p-4">
+                <div class="first">
+                  <span class=" text-white open-sans">
+                    25% off
+                  </span>
+                </div>
+                <div class="second flex-col gap-2-5">
+                  <i class="fa-solid fa-eye text-cyan-950"></i>
+                  <i class="fa-solid fa-heart text-gray-900"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-info ">
+              <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+              <div class="star-container py-2">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="rating flex justify-between items-center">
+                <div class="cost">
+                  <span class="text-red-500 open-sans text-sm">$187.50</span>
+                  <s class="open-sans text-sm text-gray-500">$250.00</s>
+                </div>
+                <div class="card">
+                  <span>
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="full-category">
+      <div class="deals-title flex justify-between mt-8">
+        <div class="heading flex gap-2-5 items-center">
+          <i class="fa-solid fa-bolt-lightning text-red-500"></i>
+          <h2 class="open-sans font-700">Categories</h2>
+        </div>
+        <div class="view-all">
+          <span class="open-sans text-sm text-slate-800 font-700 pr-1">View All</span>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+      <div class="category-list grid grid-cols-6 grid-rows-2  ">
+        <div class="list">
+          <img src="src/assets/img/jeans.webp" alt="">
+          <span class="open-sans text-sm text-slate-800 font-700">Automobile</span>
+        </div>
+        <div class="list">
+          <img src="src/assets/img/jeans.webp" alt="">
+          <span class="open-sans text-sm text-slate-800 font-700">Automobile</span>
+        </div>
+        <div class="list">
+          <img src="src/assets/img/jeans.webp" alt="">
+          <span class="open-sans text-sm text-slate-800 font-700">Automobile</span>
+        </div>
+        <div class="list">
+          <img src="src/assets/img/jeans.webp" alt="">
+          <span class="open-sans text-sm text-slate-800 font-700">Automobile</span>
+        </div>
+        <div class="list">
+          <img src="src/assets/img/jeans.webp" alt="">
+          <span class="open-sans text-sm text-slate-800 font-700">Automobile</span>
+        </div>
+        <div class="list">
+          <img src="src/assets/img/jeans.webp" alt="">
+          <span class="open-sans text-sm text-slate-800 font-700">Automobile</span>
+        </div>
+        <div class="list">
+          <img src="src/assets/img/jeans.webp" alt="">
+          <span class="open-sans text-sm text-slate-800 font-700">Automobile</span>
+        </div>
+        <div class="list">
+          <img src="src/assets/img/jeans.webp" alt="">
+          <span class="open-sans text-sm text-slate-800 font-700">Automobile</span>
+        </div>
+        <div class="list">
+          <img src="src/assets/img/jeans.webp" alt="">
+          <span class="open-sans text-sm text-slate-800 font-700">Automobile</span>
+        </div>
+        <div class="list">
+          <img src="src/assets/img/jeans.webp" alt="">
+          <span class="open-sans text-sm text-slate-800 font-700">Automobile</span>
+        </div>
+        <div class="list">
+          <img src="src/assets/img/jeans.webp" alt="">
+          <span class="open-sans text-sm text-slate-800 font-700">Automobile</span>
+        </div>
+        <div class="list">
+          <img src="src/assets/img/jeans.webp" alt="">
+          <span class="open-sans text-sm text-slate-800 font-700">Automobile</span>
+        </div>
+      </div>
+    </section>
+    <section class="more-carts">
+      <div class="deals-title flex justify-between mt-8">
+        <div class="heading flex gap-2-5 items-center">
+          <i class="fa-solid fa-bolt-lightning text-red-500"></i>
+          <h2 class="open-sans font-700">More For You</h2>
+        </div>
+        <div class="view-all">
+          <span class="open-sans text-sm text-slate-800 font-700 pr-1">View All</span>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+      <div class="extra-card-container flex gap-5">
+        <div class="card-item flex-col">
+          <div class="card-top ">
+            <div class="sub-top flex justify-between p-4">
+              <div class="first">
+                <span class=" text-white open-sans">
+                  25% off
+                </span>
+              </div>
+              <div class="second flex-col gap-2-5">
+                <i class="fa-solid fa-eye text-cyan-950"></i>
+                <i class="fa-solid fa-heart text-gray-900"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-info ">
+            <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+            <div class="star-container py-2">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            </div>
+            <div class="rating flex justify-between items-center">
+              <div class="cost">
+                <span class="text-red-500 open-sans text-sm">$187.50</span>
+                <s class="open-sans text-sm text-gray-500">$250.00</s>
+              </div>
+              <div class="card">
+                <span>
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-item flex-col">
+          <div class="card-top ">
+            <div class="sub-top flex justify-between p-4">
+              <div class="first">
+                <span class=" text-white open-sans">
+                  25% off
+                </span>
+              </div>
+              <div class="second flex-col gap-2-5">
+                <i class="fa-solid fa-eye text-cyan-950"></i>
+                <i class="fa-solid fa-heart text-gray-900"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-info ">
+            <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+            <div class="star-container py-2">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            </div>
+            <div class="rating flex justify-between items-center">
+              <div class="cost">
+                <span class="text-red-500 open-sans text-sm">$187.50</span>
+                <s class="open-sans text-sm text-gray-500">$250.00</s>
+              </div>
+              <div class="card">
+                <span>
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-item flex-col">
+          <div class="card-top ">
+            <div class="sub-top flex justify-between p-4">
+              <div class="first">
+                <span class=" text-white open-sans">
+                  25% off
+                </span>
+              </div>
+              <div class="second flex-col gap-2-5">
+                <i class="fa-solid fa-eye text-cyan-950"></i>
+                <i class="fa-solid fa-heart text-gray-900"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-info ">
+            <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+            <div class="star-container py-2">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            </div>
+            <div class="rating flex justify-between items-center">
+              <div class="cost">
+                <span class="text-red-500 open-sans text-sm">$187.50</span>
+                <s class="open-sans text-sm text-gray-500">$250.00</s>
+              </div>
+              <div class="card">
+                <span>
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-item flex-col">
+          <div class="card-top ">
+            <div class="sub-top flex justify-between p-4">
+              <div class="first">
+                <span class=" text-white open-sans">
+                  25% off
+                </span>
+              </div>
+              <div class="second flex-col gap-2-5">
+                <i class="fa-solid fa-eye text-cyan-950"></i>
+                <i class="fa-solid fa-heart text-gray-900"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-info ">
+            <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+            <div class="star-container py-2">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            </div>
+            <div class="rating flex justify-between items-center">
+              <div class="cost">
+                <span class="text-red-500 open-sans text-sm">$187.50</span>
+                <s class="open-sans text-sm text-gray-500">$250.00</s>
+              </div>
+              <div class="card">
+                <span>
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-item flex-col">
+          <div class="card-top ">
+            <div class="sub-top flex justify-between p-4">
+              <div class="first">
+                <span class=" text-white open-sans">
+                  25% off
+                </span>
+              </div>
+              <div class="second flex-col gap-2-5">
+                <i class="fa-solid fa-eye text-cyan-950"></i>
+                <i class="fa-solid fa-heart text-gray-900"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-info ">
+            <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+            <div class="star-container py-2">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            </div>
+            <div class="rating flex justify-between items-center">
+              <div class="cost">
+                <span class="text-red-500 open-sans text-sm">$187.50</span>
+                <s class="open-sans text-sm text-gray-500">$250.00</s>
+              </div>
+              <div class="card">
+                <span>
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-item flex-col">
+          <div class="card-top ">
+            <div class="sub-top flex justify-between p-4">
+              <div class="first">
+                <span class=" text-white open-sans">
+                  25% off
+                </span>
+              </div>
+              <div class="second flex-col gap-2-5">
+                <i class="fa-solid fa-eye text-cyan-950"></i>
+                <i class="fa-solid fa-heart text-gray-900"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-info ">
+            <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+            <div class="star-container py-2">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            </div>
+            <div class="rating flex justify-between items-center">
+              <div class="cost">
+                <span class="text-red-500 open-sans text-sm">$187.50</span>
+                <s class="open-sans text-sm text-gray-500">$250.00</s>
+              </div>
+              <div class="card">
+                <span>
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-item flex-col">
+          <div class="card-top ">
+            <div class="sub-top flex justify-between p-4">
+              <div class="first">
+                <span class=" text-white open-sans">
+                  25% off
+                </span>
+              </div>
+              <div class="second flex-col gap-2-5">
+                <i class="fa-solid fa-eye text-cyan-950"></i>
+                <i class="fa-solid fa-heart text-gray-900"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-info ">
+            <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+            <div class="star-container py-2">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            </div>
+            <div class="rating flex justify-between items-center">
+              <div class="cost">
+                <span class="text-red-500 open-sans text-sm">$187.50</span>
+                <s class="open-sans text-sm text-gray-500">$250.00</s>
+              </div>
+              <div class="card">
+                <span>
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-item flex-col">
+          <div class="card-top ">
+            <div class="sub-top flex justify-between p-4">
+              <div class="first">
+                <span class=" text-white open-sans">
+                  25% off
+                </span>
+              </div>
+              <div class="second flex-col gap-2-5">
+                <i class="fa-solid fa-eye text-cyan-950"></i>
+                <i class="fa-solid fa-heart text-gray-900"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-info ">
+            <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+            <div class="star-container py-2">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            </div>
+            <div class="rating flex justify-between items-center">
+              <div class="cost">
+                <span class="text-red-500 open-sans text-sm">$187.50</span>
+                <s class="open-sans text-sm text-gray-500">$250.00</s>
+              </div>
+              <div class="card">
+                <span>
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-item flex-col">
+          <div class="card-top ">
+            <div class="sub-top flex justify-between p-4">
+              <div class="first">
+                <span class=" text-white open-sans">
+                  25% off
+                </span>
+              </div>
+              <div class="second flex-col gap-2-5">
+                <i class="fa-solid fa-eye text-cyan-950"></i>
+                <i class="fa-solid fa-heart text-gray-900"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-info ">
+            <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+            <div class="star-container py-2">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            </div>
+            <div class="rating flex justify-between items-center">
+              <div class="cost">
+                <span class="text-red-500 open-sans text-sm">$187.50</span>
+                <s class="open-sans text-sm text-gray-500">$250.00</s>
+              </div>
+              <div class="card">
+                <span>
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-item flex-col">
+          <div class="card-top ">
+            <div class="sub-top flex justify-between p-4">
+              <div class="first">
+                <span class=" text-white open-sans">
+                  25% off
+                </span>
+              </div>
+              <div class="second flex-col gap-2-5">
+                <i class="fa-solid fa-eye text-cyan-950"></i>
+                <i class="fa-solid fa-heart text-gray-900"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-info ">
+            <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+            <div class="star-container py-2">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            </div>
+            <div class="rating flex justify-between items-center">
+              <div class="cost">
+                <span class="text-red-500 open-sans text-sm">$187.50</span>
+                <s class="open-sans text-sm text-gray-500">$250.00</s>
+              </div>
+              <div class="card">
+                <span>
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-item flex-col">
+          <div class="card-top ">
+            <div class="sub-top flex justify-between p-4">
+              <div class="first">
+                <span class=" text-white open-sans">
+                  25% off
+                </span>
+              </div>
+              <div class="second flex-col gap-2-5">
+                <i class="fa-solid fa-eye text-cyan-950"></i>
+                <i class="fa-solid fa-heart text-gray-900"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-info ">
+            <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+            <div class="star-container py-2">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            </div>
+            <div class="rating flex justify-between items-center">
+              <div class="cost">
+                <span class="text-red-500 open-sans text-sm">$187.50</span>
+                <s class="open-sans text-sm text-gray-500">$250.00</s>
+              </div>
+              <div class="card">
+                <span>
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-item flex-col">
+          <div class="card-top ">
+            <div class="sub-top flex justify-between p-4">
+              <div class="first">
+                <span class=" text-white open-sans">
+                  25% off
+                </span>
+              </div>
+              <div class="second flex-col gap-2-5">
+                <i class="fa-solid fa-eye text-cyan-950"></i>
+                <i class="fa-solid fa-heart text-gray-900"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-info ">
+            <h3 class="open-sans text-sm text-gray-800">NikeCourt Zoom Vapor Cage</h3>
+            <div class="star-container py-2">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            </div>
+            <div class="rating flex justify-between items-center">
+              <div class="cost">
+                <span class="text-red-500 open-sans text-sm">$187.50</span>
+                <s class="open-sans text-sm text-gray-500">$250.00</s>
+              </div>
+              <div class="card">
+                <span>
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="payment flex gap-5">
+      <div class="cart">
+        <span>
+          <i class="fa-solid fa-truck"></i>
+        </span>
+        <p class="open-sans text-md font-700 text-slate-800">Worldwide Delivery</p>
+      </div>
+
+
+      <div class="cart">
+        <span>
+          <i class="fa-solid fa-truck"></i>
+        </span>
+        <p class="open-sans text-md font-700 text-slate-800">Worldwide Delivery</p>
+      </div>
+      <div class="cart">
+        <span>
+          <i class="fa-solid fa-truck"></i>
+        </span>
+        <p class="open-sans text-md font-700 text-slate-800">Worldwide Delivery</p>
+      </div>
+      <div class="cart">
+        <span>
+          <i class="fa-solid fa-truck"></i>
+        </span>
+        <p class="open-sans text-md font-700 text-slate-800">Worldwide Delivery</p>
+      </div>
+    </section>
+  </main>
+  <footer class="flex ">
+    <div class="column-1 flex-col">
+      <div class="img">
+        <img src="src/assets/img/logo.svg" alt="">
+      </div>
+      <div class="lorem">
+        <p class="open-sans text-sm text-gray-500" style="width: 90%;">Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Auctor libero id et, in gravida. Sit diam duis
+          mauris nulla cursus. Erat et lectus vel ut sollicitudin elit at amet.</p>
+      </div>
+      <div class="content flex gap-2-5">
+        <div class="icon cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            class="injected-svg" data-src="/assets/images/icons/play-store.svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+            <g clip-path="url(#clip0-110)">
+              <path
+                d="M17.9236 8.23227C15.1356 6.67287 10.6607 4.16885 3.71978 0.282486C3.25183 -0.0265614 2.71342 -0.0670615 2.24823 0.090392L14.1569 11.999L17.9236 8.23227Z"
+                fill="#32BBFF"></path>
+              <path
+                d="M2.24824 0.090332C2.16105 0.119863 2.07621 0.155488 1.99507 0.19852C1.48137 0.476395 1.10388 1.0111 1.10388 1.68737V22.3105C1.10388 22.9868 1.48132 23.5215 1.99507 23.7993C2.07607 23.8423 2.16087 23.8781 2.24796 23.9078L14.1568 11.999L2.24824 0.090332Z"
+                fill="#32BBFF"></path>
+              <path
+                d="M14.1569 11.999L2.24799 23.9079C2.71331 24.0665 3.25172 24.0291 3.71982 23.7155C10.451 19.9463 14.8754 17.472 17.6957 15.8993C17.7742 15.8552 17.8512 15.8121 17.9272 15.7694L14.1569 11.999Z"
+                fill="#32BBFF"></path>
+              <path
+                d="M1.10388 11.999V22.3106C1.10388 22.9869 1.48132 23.5216 1.99507 23.7994C2.07607 23.8424 2.16087 23.8782 2.24796 23.9079L14.1568 11.999H1.10388Z"
+                fill="#2C9FD9"></path>
+              <path
+                d="M3.71978 0.282559C3.16407 -0.0843794 2.50876 -0.0739263 1.99506 0.198699L13.9761 12.1798L17.9235 8.23234C15.1356 6.67295 10.6607 4.16893 3.71978 0.282559Z"
+                fill="#29CC5E"></path>
+              <path
+                d="M13.9762 11.8184L1.99506 23.7994C2.50881 24.072 3.16407 24.0877 3.71978 23.7155C10.4509 19.9463 14.8754 17.472 17.6957 15.8993C17.7742 15.8552 17.8511 15.8121 17.9271 15.7694L13.9762 11.8184Z"
+                fill="#D93F21"></path>
+              <path
+                d="M22.8961 11.9989C22.8961 11.4275 22.6078 10.8509 22.0363 10.5311C22.0363 10.5311 20.9676 9.93479 17.6919 8.10254L13.7955 11.9989L17.6957 15.8992C20.9355 14.0801 22.0363 13.4667 22.0363 13.4667C22.6078 13.147 22.8961 12.5703 22.8961 11.9989Z"
+                fill="#FFD500"></path>
+              <path
+                d="M22.0363 13.4669C22.6078 13.1471 22.8961 12.5704 22.8961 11.999H13.7955L17.6957 15.8993C20.9355 14.0802 22.0363 13.4669 22.0363 13.4669Z"
+                fill="#FFAA00"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0-110">
+                <rect width="24" height="24" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+          <div class="text flex-col  w-full">
+            <div class="p text-xs text-white">Get in</div>
+            <div class="font-900 text-sm open-sans text-white">Google Play</div>
+          </div>
+        </div>
+        <div class="icon cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            class="injected-svg" data-src="/assets/images/icons/play-store.svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+            <g clip-path="url(#clip0-110)">
+              <path
+                d="M17.9236 8.23227C15.1356 6.67287 10.6607 4.16885 3.71978 0.282486C3.25183 -0.0265614 2.71342 -0.0670615 2.24823 0.090392L14.1569 11.999L17.9236 8.23227Z"
+                fill="#32BBFF"></path>
+              <path
+                d="M2.24824 0.090332C2.16105 0.119863 2.07621 0.155488 1.99507 0.19852C1.48137 0.476395 1.10388 1.0111 1.10388 1.68737V22.3105C1.10388 22.9868 1.48132 23.5215 1.99507 23.7993C2.07607 23.8423 2.16087 23.8781 2.24796 23.9078L14.1568 11.999L2.24824 0.090332Z"
+                fill="#32BBFF"></path>
+              <path
+                d="M14.1569 11.999L2.24799 23.9079C2.71331 24.0665 3.25172 24.0291 3.71982 23.7155C10.451 19.9463 14.8754 17.472 17.6957 15.8993C17.7742 15.8552 17.8512 15.8121 17.9272 15.7694L14.1569 11.999Z"
+                fill="#32BBFF"></path>
+              <path
+                d="M1.10388 11.999V22.3106C1.10388 22.9869 1.48132 23.5216 1.99507 23.7994C2.07607 23.8424 2.16087 23.8782 2.24796 23.9079L14.1568 11.999H1.10388Z"
+                fill="#2C9FD9"></path>
+              <path
+                d="M3.71978 0.282559C3.16407 -0.0843794 2.50876 -0.0739263 1.99506 0.198699L13.9761 12.1798L17.9235 8.23234C15.1356 6.67295 10.6607 4.16893 3.71978 0.282559Z"
+                fill="#29CC5E"></path>
+              <path
+                d="M13.9762 11.8184L1.99506 23.7994C2.50881 24.072 3.16407 24.0877 3.71978 23.7155C10.4509 19.9463 14.8754 17.472 17.6957 15.8993C17.7742 15.8552 17.8511 15.8121 17.9271 15.7694L13.9762 11.8184Z"
+                fill="#D93F21"></path>
+              <path
+                d="M22.8961 11.9989C22.8961 11.4275 22.6078 10.8509 22.0363 10.5311C22.0363 10.5311 20.9676 9.93479 17.6919 8.10254L13.7955 11.9989L17.6957 15.8992C20.9355 14.0801 22.0363 13.4667 22.0363 13.4667C22.6078 13.147 22.8961 12.5703 22.8961 11.9989Z"
+                fill="#FFD500"></path>
+              <path
+                d="M22.0363 13.4669C22.6078 13.1471 22.8961 12.5704 22.8961 11.999H13.7955L17.6957 15.8993C20.9355 14.0802 22.0363 13.4669 22.0363 13.4669Z"
+                fill="#FFAA00"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0-110">
+                <rect width="24" height="24" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+          <div class="text flex-col  w-full">
+            <div class="p text-xs text-white">Get in</div>
+            <div class="font-900 text-sm open-sans text-white">Google Play</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column-2 py-5 mt-1 flex-col gap-2-5 ">
+      <div class="title">
+        <h2 class="open-sans text-white" style="font-family: var(--open-sans);">About Us</h2>
+      </div>
+      <ul class="flex-col gap-2-5">
+        <li><a href="#" class="open-sans text-sm text-gray-400">Careers</a></li>
+        <li><a href="#" class="open-sans text-sm text-gray-400">Careers</a></li>
+        <li><a href="#" class="open-sans text-sm text-gray-400">Careers</a></li>
+        <li><a href="#" class="open-sans text-sm text-gray-400">Careers</a></li>
+        <li><a href="#" class="open-sans text-sm text-gray-400">Careers</a></li>
+      </ul>
+
+    </div>
+
+
+    <div class="column-3 py-5 mt-1 flex-col gap-2-5">
+      <div class="title">
+        <h2 class="open-sans text-white" style="font-family: var(--open-sans);">Customer Care</h2>
+      </div>
+      <ul class="flex-col gap-2-5">
+        <li><a href="#" class="open-sans text-sm text-gray-400">Help Center</a></li>
+        <li><a href="#" class="open-sans text-sm text-gray-400">How to Buy</a></li>
+        <li><a href="#" class="open-sans text-sm text-gray-400">Track Your Order</a></li>
+        <li><a href="#" class="open-sans text-sm text-gray-400">Corporate & Bulk Purchasing</a></li>
+        <li><a href="#" class="open-sans text-sm text-gray-400">Returns & Refunds</a></li>
+      </ul>
+    </div>
+    <div class="column-4 py-5 mt-1 flex-col gap-2-5">
+      <div class="title">
+        <h2 class="open-sans text-white" style="font-family: var(--open-sans);">Contact Us</h2>
+      </div>
+      <ul class="flex-col gap-2-5">
+        <li><a href="#" class="open-sans text-sm text-gray-400">70 Washington Square South, New York, NY 10012, United
+            States</a></li>
+        <li><a href="#" class="open-sans text-sm text-gray-400">Email: uilib.help@gmail.com</a></li>
+        <li><a href="#" class="open-sans text-sm text-gray-400">Phone: +1 1123 456 780</a></li>
+
+      </ul>
+      <div class="call flex gap-2-5 mt-5">
+        <span>
+          <i class="fa-brands fa-facebook text-white"></i>
+        </span>
+        <span>
+          <i class="fa-brands fa-facebook text-white"></i>
+        </span>
+        <span>
+          <i class="fa-brands fa-facebook text-white"></i>
+        </span>
+        <span>
+          <i class="fa-brands fa-facebook text-white"></i>
+        </span>
+        <span>
+          <i class="fa-brands fa-facebook text-white"></i>
+        </span>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <script src="src/script/app.js"></script>
+</body>
+</html>
